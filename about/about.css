@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background: linear-gradient(10deg, #010101ff, #2d2d2dff);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  margin-top: 0px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  font-weight: bold;
+  margin: 5px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 4px;
+  background: #00ccffff;
+  transition: width 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: #00ccffff;
+  transition: 0.3s;
+}
+
+.about .main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 800px;
+  margin-left: 100px;
+  margin-top: 130px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+
+  display: flex;
+  margin-left: 40px;
+  position: relative;
+  left: 200px;
+  top: -5px;
+  transition: 0.5s;     
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  filter: drop-shadow(0 0 5px #00ccff88) 
+          drop-shadow(0 0 10px #00ccff77) 
+          drop-shadow(0 0  90px #00ccff66)
+;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 2em;
+  font-weight: 800;
+}
+.about-text h2 .wlc {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-weight: 1000;
+  font-size: 2em;
+
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  animation: typing 4s steps(30) forwards, blink 0.7s step-end infinite; 
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7.9ch;
+
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+.about-text span {
+  font-weight: bold;
+}
+
+.about-text h2 span {
+  color: #00ccffff;
+}
+
+.ig {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 0px; 
+    margin-left: 100px; 
+    top: -30px;
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+    transition: 0.5s;
+}
+
+
+.tt {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 0px; 
+    margin-left: 40px; 
+    top: -30px;
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+    transition: 0.5s;
+}
+
+.tt:hover {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 0px; 
+    margin-left: 40px; 
+    top: -30px;
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+}
+
+.ig:hover {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 0px; 
+    margin-left: 100px; 
+    top: -30px;
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+}
+
+.gh {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 0px; 
+    margin-left: 40px; 
+    top: -30px;
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+    transition: 0.5s;
+}
+
+.gh {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 0px; 
+    margin-left: 40px; 
+    top: -30px;
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+    transition: 0.5s;
+}
+
+.gh:hover {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 0px; 
+    margin-left: 40px; 
+    top: -30px;
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-abt {
+  position: relative;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #00ccffff;
+  background-color: transparent;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-left: 95px;
+  transition: 0.5s;
+}
+
+.btn-abt:hover {
+  background-color: #00ccffff;
+  color: black;
+  transition: 0.5s;
+}
+
+#satu {
+  height: 100vh;
+}
+
+#dua {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+#dua img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  left: 70px;
+  top: -5px;
+  transition: 0.5s;     
+}
+
+#dua img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: 0 0 0px #00ccffff, 0 0 90px #00ccffff;  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  margin-left: 0px;
+  border: 2px solid #00ccffff;
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 600px;
+  box-shadow: 0 0 0px #00ccffff, 0 0 10px #00ccffff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  transition: 0.5s;
+}
+
+.container:hover {
+    transition: 0.5s
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  margin-left: 0px;
+  border: 2px solid #00ccffff;
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 600px;
+  box-shadow: 0 0 10px #00ccffff, 0 0 20px #00ccffff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  scale: 1.05;
+
+}
+
+
+.judul {
+  -webkit-text-stroke: 0.5px #00ccffff;
+  color: transparent;
+  font-size: 2.5em;
+  font-weight: 800;
+  transition: 0.5s;
+}
+
+.judul:hover {
+  color: #00ccffff;
+  font-size: 2.5em;
+  font-weight: 800;
+  transition: 0.5s;
+}
+
+.bio h2 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bio p {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+}

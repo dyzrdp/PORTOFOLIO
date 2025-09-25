@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(10deg, #010101ff, #2d2d2dff);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  margin-top: 0px;
+}
+
+nav::keyframe fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  font-weight: bold;
+  margin: 5px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 4px;
+  background: #00ccffff;
+  transition: width 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: #00ccffff;
+  transition: 0.3s;
+}
+
+/* Hero */
+.hero {
+  text-align: left;
+  padding: 60px;
+  margin-top: 30px;
+  
+}
+
+.hero h1 {
+  position: relative;
+  left: 30vh;
+  font-size: 9vw;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.hero h1 .outline {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-weight: 800;
+  position: relative;
+  right: 15vh;
+}
+
+.hero h1 .nama {
+  position: relative;
+  font-weight: 800;
+}
+
+.hero .info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.status .limited {
+  font-weight: 700;
+  color: black;
+  background: #00ccffff;
+  padding: 1px 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.status .limited:hover {
+  background: #04a7cfff;
+  color: black;
+  transition: 0.3s;
+}
+
+.headline {
+    display: inline-block;
+}
+
+.outline {
+    display: inline-block;
+}
+
+.nama {
+    display: inline-block;
+}
+
+hero::keyframe fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

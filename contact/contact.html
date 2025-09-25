@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Dzaky</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+<body>
+  
+
+    <nav data-aos="fade-down" data-aos-duration="3000">
+      <div class="logo">DZAKY ALMER. J</div>
+      <ul>
+        <li><a href="/website_porto/home/home.html">Home</a></li>
+        <li><a href="/website_porto/about/about.html">About</a></li>
+        <li><a href="/website_porto/project/project.html">Project</a></li>
+        <li><a href="/website_porto/skills/skills.html">Skills</a></li>
+      </ul>
+    </nav>
+
+    <!-- body -->
+    
+    <section>
+      <h1 data-aos="fade-down" data-aos-duration="2000">Contact Me</h1>
+      <div class="contact-form" data-aos="fade-up" data-aos-duration="3000">
+        <form id="contact-form" action="https://formspree.io/f/xldwjzob" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="_replyto" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true 
+    });
+  </script>
+  <script src="contact.js"></script>
+  </body>
+
+</html>

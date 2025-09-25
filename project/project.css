@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(10deg, #010101ff, #2d2d2dff);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  margin-top: 0px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  font-weight: bold;
+  margin: 5px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 4px;
+  background: #00ccffff;
+  transition: width 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: #00ccffff;
+  transition: 0.3s;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 2em;
+  font-weight: 800;
+
+}
+
+
+img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.project-card {
+  border: 2px solid #333333ff;
+  backdrop-filter: blur(70px);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  transition: 0.5s;
+  
+}
+
+.project-card:hover {
+  border: 2px solid #00ccffff;
+  box-shadow: 0 0 50px #00ccff40;
+  transition: 0.5s;
+  
+}
+
+.project-card img {
+  opacity: 0.1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+.project-card:hover img {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.project-card img:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.project-card p {
+  margin-bottom: 30px;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.project-card:hover p {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.project-card h3 {
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.project-card:hover h3 {
+  opacity: 0.9;
+  transition: 0.5s;
+}
